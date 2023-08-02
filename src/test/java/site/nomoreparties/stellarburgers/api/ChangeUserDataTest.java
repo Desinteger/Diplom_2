@@ -21,9 +21,7 @@ import static org.hamcrest.core.IsEqual.equalTo;
         public void testChangeUserDataWithAuthorization() {
                 var user = generator.random();
                 userActions.createUser(user);
-                var loginResponse = userActions.loginUser(user);
-                String accessToken = loginResponse.extract().path("accessToken");
-                userActions.setAccessToken(accessToken);
+                userActions.loginUser(user);
                 ValidatableResponse response = userActions.updateUserData();
                 response.assertThat().statusCode(HttpURLConnection.HTTP_OK)
                         .and()
