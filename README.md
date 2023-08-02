@@ -9,7 +9,7 @@ Documentation: https://code.s3.yandex.net/qa-automation-engineer/java/cheatsheet
 
 # Technologies
 
-Java 11, maven 2.22.2, JUnit 4.13.2, allure 2.10.0, rest-assured 5.3.1, gson 2.10.1
+Java 11, maven 3.7.1, JUnit 4.13.2, allure 2.23.0, rest-assured 5.3.1, gson 2.10.1
 
 # Clean up and run tests
 
